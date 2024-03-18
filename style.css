@@ -15,10 +15,9 @@ body {
 
 .heading {
   overflow-wrap: normal;
-  color: rgb(9, 243, 255);
+  color: rgb(116, 248, 255);
   text-align: center;
   margin: 100px 0 40px 0;
-  text-shadow: 0px 0px 15px rgb(55, 6, 251);
 }
 
 .container {
@@ -26,20 +25,18 @@ body {
   flex-direction: column;
   justify-content: space-around;
   padding: 25px;
-  width: 450px;
+  width: 600px;
   height: 300px;
   background-color: rgba(182, 180, 180, 0.559);
   border-radius: 25px;
   margin: 0 auto;
-  box-shadow: 0 0 50px 15px rgb(100, 4, 144);
 }
 
 .up,
 .down {
   height: 100px;
-  box-shadow: 0 0 10px 3px rgb(124, 244, 234);
   border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.573);
+  background-color: rgba(0, 0, 0, 0.737);
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
@@ -57,6 +54,13 @@ input {
 #downDetail {
   font-size: 23px;
 }
+
+@media only screen and (max-width: 700px) {
+    .container {
+        width: 450px;
+      }
+}
+
 
 @media only screen and (max-width: 550px) {
   .heading {
@@ -94,6 +98,7 @@ input {
     width: auto;
     height: 65vh;
     padding: 23px;
+    text-align: center;
   }
 
   .up,

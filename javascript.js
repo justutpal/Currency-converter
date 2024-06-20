@@ -23,13 +23,11 @@ let myFunction = function () {
             responseData = data.data
             console.log(responseData);
             for (const currency in responseData) {
-                if (responseData.hasOwnProperty(currency)) {
                     rates = responseData[currency].toFixed(3);
                     currShort = currency
                     let final = newChild(currency , currency)
                     upDetail.appendChild(final);
                     downDetail.appendChild(newChild(currency , currency));
-                }
             }
         })
 }
